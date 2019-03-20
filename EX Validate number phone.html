@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nunber phone</title>
+</head>
+<body>
+<script>
+    function numberphone(str) {
+        let regexp=/^\([0-9]{2}\)-\([0]+[0-9]{9}\)$/
+        if (regexp.test(str)){
+            document.write("number phone invalid" + "<br>")
+        }else {
+            document.write("number phone not invalid" + "<br>")
+        }
+
+    }numberphone("(84)-(0978489648)")
+    numberphone("(a8)-(22222222)")
+</script>
+</body>
+</html>
